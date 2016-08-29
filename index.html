@@ -15,7 +15,10 @@
         <link rel="stylesheet" href="css/main.css">
 
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-        <link href="https://fonts.googleapis.com/css?family=Lato:100,400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300i" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+        <link href="mediaq.css" rel="stylesheet">
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -30,23 +33,25 @@
         <!--****NAVBAR****-->
 
         <section class="navbar">
-            <ul>
-                <li><a class="active" href="#">Home</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Contact</a></li>
-           </ul>
+            <div class="navbar-center">
+                <ul>
+                    <li><a class="active" href="#">Home</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Contact</a></li>
+               </ul>
+           </div>
        </section>
 
         <!--****HEADER SPLASH, BUTTON****-->
 
         <section class="splash-container">
             <div class="splash">
-                <h1 id="pageheader">Front-End Developer</h1>
-                <p>Ernests Millers</p>
-                <p>
-                    <a class="button-projects" href="#extra">Go to Projects</a>
-                </p>
+                <h1 id="pageheader">Ernests Millers</h1>
+                <p>Front-end Developer</p>
+            </div>
+            <div class="button-projects">
+                <a class="link-projects" href="#jump-button">Go to Projects</a>
             </div>
         </section>
 
@@ -54,14 +59,11 @@
                 ABOUT ME
         *********************************************************************-->
 
-        <section id="about">
-            <div class="title">
+        <section class="section-container grey">
+            <div class="section-title">
                 <h2>About</h2>
             </div>
-            <div class="about-content">
-                <div class="mypicture">
-                    <img src="/img/face.png" alt="mypicture">
-                </div>
+            <div class="section-content">
                 <div class="abouttext">
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in nisi at urna pellentesque varius vitae eu turpis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin vitae suscipit lorem, vel condimentum eros. Aliquam quis tortor diam. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam pharetra lacinia magna nec molestie. Curabitur blandit mauris interdum nunc imperdiet, vitae elementum justo iaculis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis efficitur, diam a efficitur convallis, sapien nulla molestie metus, et vestibulum dolor felis vel magna.
@@ -74,19 +76,44 @@
                 PROJECTS
         *********************************************************************-->
 
-        <section id="about">
-            <div class="title">
-                <h2>About</h2>
+        <section class="section-container blue"  id="jump-button">
+            <div class="section-title">
+                <h2>Projects</h2>
             </div>
-            <div class="about-content">
-                <div class="mypicture">
-                    <img src="/img/face.png" alt="mypicture">
+            <div class="section-content">
+                <div class="project-container">
+                    <div class="project-example">
+                        <img src="/img/project.jpg" alt="first-project" class="project-image">
+                    </div>
+                    <div class="project-example">
+                        <img src="/img/project.jpg" alt="second-project" class="project-image">
+                    </div>
+                    <div class="project-example">
+                        <img src="/img/project.jpg" alt="third-project" class="project-image">
+                    </div>
+                    <div class="project-example">
+                        <img src="/img/project.jpg" alt="fourth-project" class="project-image">
+                    </div>
+                    <div class="project-example">
+                        <img src="/img/project.jpg" alt="fifth-project" class="project-image">
+                    </div>
+                    <div class="project-example">
+                        <img src="/img/project.jpg" alt="sixth-project" class="project-image">
+                    </div>
                 </div>
-                <div class="abouttext">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in nisi at urna pellentesque varius vitae eu turpis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin vitae suscipit lorem, vel condimentum eros. Aliquam quis tortor diam. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam pharetra lacinia magna nec molestie. Curabitur blandit mauris interdum nunc imperdiet, vitae elementum justo iaculis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis efficitur, diam a efficitur convallis, sapien nulla molestie metus, et vestibulum dolor felis vel magna.
-                    </p>
-                </div>
+            </div>
+        </section>
+
+        <!--********************************************************************
+                SKILLSET
+        *********************************************************************-->
+
+        <section class="section-container grey">
+            <div class="section-title">
+                <h2>Skillset</h2>
+            </div>
+            <div class="section-content">
+
             </div>
         </section>
 

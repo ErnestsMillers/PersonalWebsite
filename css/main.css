@@ -1,3 +1,6 @@
+/* OVERALL THINGS */
+/* BLUE BACKGROUND */
+/* GREY BACKGROUND */
 /*! Typebase.less v0.1.0 | MIT License */
 /* Setup */
 html {
@@ -34,15 +37,14 @@ blockquote {
   margin-bottom: 1.5rem; }
 
 /* Headings */
-h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
   /* Change heading typefaces here */
-  font-family: 'Lato', sans-serif;
-  margin-top: 1.5rem;
+  font-family: 'Luckiest Guy', cursive;
+  margin-top: 0;
   margin-bottom: 0;
   line-height: 1.5rem; }
 
@@ -54,8 +56,7 @@ h1 {
 
 h2 {
   font-size: 2.828rem;
-  line-height: 3rem;
-  margin-top: 3rem; }
+  line-height: 1.5rem; }
 
 h3 {
   font-size: 1.414rem; }
@@ -97,76 +98,131 @@ code {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+.section-container {
+  width: 100%;
+  padding: 40px 0; }
+
+.section-title {
+  text-align: center; }
+
+.section-content {
+  width: 50%;
+  margin: auto; }
+
+/* COLOURS */
+.blue {
+  background-color: #0099CB;
+  color: #fff; }
+
+.grey {
+  background-color: #fff;
+  color: #0099CB; }
+
+.blue > .section-title {
+  color: #FFF; }
+
+.grey > .section-title {
+  color: #007398; }
+
+/* HEADER */
+.navbar {
+  top: 0;
+  width: 100%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-bottom: 2px solid #00b7f2;
+  padding: 10px;
+  -webkit-box-shadow: 0px 5px 5px 2px rgba(0, 183, 242, 0.4);
+  -moz-box-shadow: 0px 5px 5px 2px rgba(0, 183, 242, 0.4);
+  box-shadow: 0px 5px 5px 2px rgba(0, 183, 242, 0.4); }
+
+.navbar-center {
+  width: 30%;
+  margin: 0 auto; }
+
 ul {
   list-style-type: none;
   margin: 0;
-  padding: 0;
-  overflow: hidden;
-  position: fixed;
-  width: 100%;
-  margin: auto; }
+  padding: 0; }
 
 li {
-  display: inline-block; }
-
-li a {
-  display: block;
-  color: #eee;
+  float: left;
   text-align: center;
-  padding: 14px 16px;
-  text-decoration: none; }
+  width: 25%; }
 
-li a:hover {
-  font-size: 20px; }
-
-.active {
-  font-size: 18px; }
+a {
+  text-decoration: none;
+  line-height: 0;
+  color: #eee;
+  text-transform: uppercase;
+  font-size: 13px; }
 
 .splash-container {
-  height: 600px;
-  background-image: url("/img/bg.jpg");
-  background-size: cover;
-  background-attachment: fixed; }
-  .splash-container .splash {
-    padding-top: 100px;
-    text-align: center;
-    color: white; }
+  height: 700px;
+  background-image: url("/img/bg.png");
+  background-attachment: fixed;
+  padding: 150px 0 250px 0; }
+
+.splash {
+  text-align: center;
+  color: #fff;
+  width: 550px;
+  margin: auto;
+  font-family: 'Josefin Sans', sans-serif;
+  padding: 35px 0;
+  -ms-transform: rotate(20deg);
+  -webkit-transform: rotate(20deg);
+  transform: rotate(-3deg);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
+
+.splash > p {
+  font-size: 18px;
+  margin-top: 0;
+  padding-top: 0; }
+
+#pageheader {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-family: 'Josefin Sans', sans-serif;
+  margin: 0;
+  font-size: 90px;
+  line-height: 1em;
+  letter-spacing: 4px; }
 
 .button-projects {
-  color: #0099CB;
-  text-decoration: none;
+  width: 180px;
+  margin: 70px auto;
   padding: 10px 30px;
-  background-color: white;
+  background-color: blue;
   border-radius: 5px;
-  text-transform: uppercase;
-  -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 10px 1px rgba(255, 255, 255, 0.75);
+  -moz-box-shadow: 0px 0px 10px 1px rgba(255, 255, 255, 0.75);
+  box-shadow: 0px 0px 10px 1px rgba(255, 255, 255, 0.75);
   background: #e5e5e5;
   background: -webkit-linear-gradient(top, #ffffff 0%, #e5e5e5 100%);
   background: -o-linear-gradient(top, #ffffff 0%, #e5e5e5 100%);
   background: -moz-linear-gradient(top, #ffffff 0%, #e5e5e5 100%);
   background: linear-gradient(top, #ffffff 0%, #e5e5e5 100%); }
 
-#about {
-  border: 1px solid black;
-  text-align: center; }
+.link-projects {
+  color: #0099CB;
+  text-decoration: none;
+  text-transform: uppercase; }
 
-.about-content {
-  margin: 50px;
-  overflow: hidden; }
-
-.mypicture {
-  float: left;
-  width: 20%; }
-
+/* ABOUT */
 .abouttext {
-  float: right;
-  width: 80%;
-  margin-top: 0; }
-  .abouttext p {
-    margin-top: 0; }
+  width: 100%; }
 
-img {
-  height: 100px;
-  width: 100px; }
+/*PROJECTS*/
+.project-container {
+  padding-top: 30px; }
+
+.project-example {
+  display: inline-block;
+  width: 32.9%;
+  padding: 15px; }
+
+.project-image {
+  width: 100%;
+  border-radius: 20px; }
