@@ -16,7 +16,6 @@
 
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300i" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
         <link href="mediaq.css" rel="stylesheet">
     </head>
@@ -29,45 +28,46 @@
                 LANDING PAGE - HEADER
         *********************************************************************-->
 
+        <!--****HEADER SPLASH, BUTTON****-->
+    <div class="background" id="home-jump">
+        <section class="splash-container">
+            <div class="splash">
+                <h1 id="pageheader">Ernests Millers</h1>
+                <p>Front-end Developer</p>
+            </div>
+        </section>
+
 
         <!--****NAVBAR****-->
 
         <section class="navbar">
             <div class="navbar-center">
                 <ul>
-                    <li><a class="active" href="#">Home</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a class="active" href="#home-jump">Home</a></li>
+                    <li><a href="#projects-jump">Projects</a></li>
+                    <li><a href="#skillset-jump">Skills</a></li>
+                    <li><a href="#contact-jump">Contact</a></li>
                </ul>
            </div>
        </section>
+   </div>
 
-        <!--****HEADER SPLASH, BUTTON****-->
-
-        <section class="splash-container">
-            <div class="splash">
-                <h1 id="pageheader">Ernests Millers</h1>
-                <p>Front-end Developer</p>
-            </div>
-            <div class="button-projects">
-                <a class="link-projects" href="#jump-button">Go to Projects</a>
-            </div>
-        </section>
 
         <!--********************************************************************
                 ABOUT ME
         *********************************************************************-->
 
         <section class="section-container grey">
-            <div class="section-title">
-                <h2>About</h2>
-            </div>
-            <div class="section-content">
-                <div class="abouttext">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in nisi at urna pellentesque varius vitae eu turpis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin vitae suscipit lorem, vel condimentum eros. Aliquam quis tortor diam. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam pharetra lacinia magna nec molestie. Curabitur blandit mauris interdum nunc imperdiet, vitae elementum justo iaculis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis efficitur, diam a efficitur convallis, sapien nulla molestie metus, et vestibulum dolor felis vel magna.
-                    </p>
+            <div class="section-wrapper">
+                <div class="section-title">
+                    <h2>About</h2>
+                </div>
+                <div class="section-content">
+                    <div class="abouttext">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in nisi at urna pellentesque varius vitae eu turpis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin vitae suscipit lorem, vel condimentum eros. Aliquam quis tortor diam. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam pharetra lacinia magna nec molestie. Curabitur blandit mauris interdum nunc imperdiet, vitae elementum justo iaculis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis efficitur, diam a efficitur convallis, sapien nulla molestie metus, et vestibulum dolor felis vel magna.
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -76,29 +76,31 @@
                 PROJECTS
         *********************************************************************-->
 
-        <section class="section-container blue"  id="jump-button">
-            <div class="section-title">
-                <h2>Projects</h2>
-            </div>
-            <div class="section-content">
-                <div class="project-container">
-                    <div class="project-example">
-                        <img src="/img/project.jpg" alt="first-project" class="project-image">
-                    </div>
-                    <div class="project-example">
-                        <img src="/img/project.jpg" alt="second-project" class="project-image">
-                    </div>
-                    <div class="project-example">
-                        <img src="/img/project.jpg" alt="third-project" class="project-image">
-                    </div>
-                    <div class="project-example">
-                        <img src="/img/project.jpg" alt="fourth-project" class="project-image">
-                    </div>
-                    <div class="project-example">
-                        <img src="/img/project.jpg" alt="fifth-project" class="project-image">
-                    </div>
-                    <div class="project-example">
-                        <img src="/img/project.jpg" alt="sixth-project" class="project-image">
+        <section class="section-container blue"  id="projects-jump">
+            <div class="section-wrapper">
+                <div class="section-title">
+                    <h2>Projects</h2>
+                </div>
+                <div class="section-content">
+                    <div class="project-container">
+                        <div class="project-example">
+                            <img src="/img/project.jpg" alt="first-project" class="project-image">
+                        </div>
+                        <div class="project-example">
+                            <img src="/img/project.jpg" alt="second-project" class="project-image">
+                        </div>
+                        <div class="project-example">
+                            <img src="/img/project.jpg" alt="third-project" class="project-image">
+                        </div>
+                        <div class="project-example">
+                            <img src="/img/project.jpg" alt="fourth-project" class="project-image">
+                        </div>
+                        <div class="project-example">
+                            <img src="/img/project.jpg" alt="fifth-project" class="project-image">
+                        </div>
+                        <div class="project-example">
+                            <img src="/img/project.jpg" alt="sixth-project" class="project-image">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -108,12 +110,80 @@
                 SKILLSET
         *********************************************************************-->
 
-        <section class="section-container grey">
-            <div class="section-title">
-                <h2>Skillset</h2>
-            </div>
-            <div class="section-content">
+        <section class="section-container grey" id="skillset-jump">
+            <div class="section-wrapper">
+                <div class="section-title">
+                    <h2>Skillset</h2>
+                </div>
+                <div class="section-content">
+                    <div class="left-side-skillset">
+                        <div class="skillset-example">
+                            <div class="skillset-graph">
 
+                            </div>
+                            <div class="skillset-text">
+
+                            </div>
+                        </div>
+                        <div class="skillset-example">
+                            <div class="skillset-graph">
+
+                            </div>
+                            <div class="skillset-text">
+
+                            </div>
+                        </div>
+                        <div class="skillset-example">
+                            <div class="skillset-graph">
+
+                            </div>
+                            <div class="skillset-text">
+
+                            </div>
+                        </div>
+                    </div><!--
+                 --><div class="right-side-skillset">
+                        <div class="skillset-example">
+                            <div class="skillset-graph">
+
+                            </div>
+                            <div class="skillset-text">
+
+                            </div>
+                        </div>
+                        <div class="skillset-example">
+                            <div class="skillset-graph">
+
+                            </div>
+                            <div class="skillset-text">
+
+                            </div>
+                        </div>
+                        <div class="skillset-example">
+                            <div class="skillset-graph">
+
+                            </div>
+                            <div class="skillset-text">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--********************************************************************
+                CONTACT
+        *********************************************************************-->
+
+        <section class="section-container blue" id="contact-jump">
+            <div class="section-wrapper">
+                <div class="section-title">
+                    <h2>Contact</h2>
+                </div>
+                <div class="section-content">
+
+                </div>
             </div>
         </section>
 
