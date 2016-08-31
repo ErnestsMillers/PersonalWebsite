@@ -94,14 +94,21 @@ code {
 .hug {
   margin-top: 0; }
 
-* {
+/* BOX SIZING */
+html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit; }
+
+/* BASE STYLES */
 .section-container {
   width: 100%;
-  padding: 50px 0 50px 0;
+  padding: 80px 0;
   text-align: center; }
 
 .section-wrapper {
@@ -148,18 +155,18 @@ ul {
 li {
   float: left;
   text-align: center;
-  width: 25%; }
+  width: 33%; }
 
 a {
   text-decoration: none;
   line-height: 0;
   color: #eee;
   text-transform: uppercase;
-  font-size: 18px; }
+  font-size: 20px; }
 
 .splash-container {
-  height: 600px;
-  padding: 150px 0 150px 0; }
+  height: 450px;
+  padding: 100px 0 150px 0; }
 
 .background {
   background-image: url("/img/bg.png"); }
@@ -174,8 +181,8 @@ a {
   -ms-transform: rotate(20deg);
   -webkit-transform: rotate(20deg);
   transform: rotate(-3deg);
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5); }
 
 .splash > p {
   font-size: 18px;
@@ -197,7 +204,7 @@ a {
 
 /*PROJECTS*/
 .project-container {
-  padding-top: 20px; }
+  padding-top: 10px; }
 
 .project-example {
   display: inline-block;
@@ -206,20 +213,6 @@ a {
 
 .project-image {
   width: 100%;
-  border-radius: 5%; }
+  border-radius: 3%; }
 
 /*SKILLSET*/
-.left-side-skillset {
-  display: inline-block;
-  border: 1px solid black;
-  width: 50%; }
-
-.right-side-skillset {
-  display: inline-block;
-  border: 1px solid black;
-  width: 50%; }
-
-.skillset-example {
-  display: block;
-  height: 100px;
-  border: 1px solid black; }
