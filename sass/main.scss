@@ -1,0 +1,25 @@
+/* OVERALL THINGS */
+@import "./snippets/vars";
+@import "./snippets/typography";
+@import "./snippets/base";
+
+
+
+
+
+
+/* HEADER */
+@import "./snippets/sections/header/navbar";
+@import "./snippets/sections/header/headerbackground";
+
+/* ABOUT */
+@import "./snippets/sections/about/about";
+
+/*PROJECTS*/
+@import "./snippets/sections/projects/projects";
+
+/*SKILLSET*/
+@import "./snippets/sections/skillset/skillset";
+
+/*CONTACT*/
+@import "./snippets/sections/contact/contact";
