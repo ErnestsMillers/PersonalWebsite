@@ -1,15 +1,47 @@
-$(document).ready(function() {
+var options = {
+  //segmentShowStroke: false,
+  percentageInnerCutout: 70,
+  //animation: true,
+  animationEasing: 'easeOutQuint',
+  //animateRotate: false,
+  animateScale: true
+};
+var data = {
+  html_css: [
+    { value: 85, color: "hsl(120, 39%, 54%)" },
+    { value: 15, color: "hsl(120, 10%, 90%)" }
+  ],
+  sass: [
+    { value: 70, color: "hsl(120, 39%, 54%)" },
+    { value: 30, color: "hsl(120, 10%, 90%)" }
+  ],
+  jquery: [
+    { value: 40, color: "hsl(120, 39%, 54%)" },
+    { value: 60, color: "hsl(120, 10%, 90%)" }
+  ],
+  rails: [
+    { value: 50, color: "hsl(120, 39%, 54%)" },
+    { value: 50, color: "hsl(120, 10%, 90%)" }
+  ],
+  backbone: [
+    { value: 30, color: "hsl(120, 39%, 54%)" },
+    { value: 70, color: "hsl(120, 10%, 90%)" }
+  ],
+  photoshop: [
+    { value: 60, color: "hsl(120, 39%, 54%)" },
+    { value: 40, color: "hsl(120, 10%, 90%)" }
+  ]
+};
 
-  $(window).scroll(function () {
-      //if you hard code, then use console
-      //.log to determine when you want the
-      //nav bar to stick.
-      console.log($(window).scrollTop())
-    if ($(window).scrollTop() > 280) {
-      $('#nav_bar').addClass('navbar-fixed');
-    }
-    if ($(window).scrollTop() < 281) {
-      $('#nav_bar').removeClass('navbar-fixed');
-    }
-  });
+var offset = 0;
+$.each(data, function(key, data) {
+  var canvas = document.querySelector('#' + key);
+  if(canvas) {
+    offset += 250;
+    setTimeout(function() {
+      var ctx = canvas.getContext('2d');
+      var chart = new Chart(ctx);
+      chart.Doughnut(data, options);
+    }, offset);
+  }
 });

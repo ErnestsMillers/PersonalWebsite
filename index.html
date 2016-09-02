@@ -13,7 +13,7 @@
 
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/main.css">
-
+        <script src="js/main.js"></script>
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300i" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
@@ -123,72 +123,54 @@
                     <small class="small-text">I am certain I can do few things.</small>
                 </div>
                 <div class="section-content clearfix">
-                    <div class="skillset-example">
-                        <figure>
-                            <canvas height='150' id='html_css' width='150'>
-                            </canvas>
-                                <figcaption>
-                                    <h4>Semantic HTML5</h4>
-                                    <p>I am quite familiar with this.</p>
-                                </figcaption>
-                        </figure>
+                    <div class='skillset-example'>
+                      <figure>
+                        <canvas height='150' id='html_css' width='150'></canvas>
+                        <figcaption>
+                          Semantic HTML5 & CSS3
+                        </figcaption>
+                      </figure>
                     </div>
-
-                    <div class="skillset-example">
-                        <figure>
-                            <canvas height='150' id='html_css' width='150'>
-                            </canvas>
-                                <figcaption>
-                                    <h4>Readable CSS3</h4>
-                                    <p>I am quite familiar with this.</p>
-                                </figcaption>
-                        </figure>
+                    <div class='skillset-example'>
+                      <figure>
+                        <canvas height='150' id='sass' width='150'></canvas>
+                        <figcaption>
+                          Sass
+                        </figcaption>
+                      </figure>
                     </div>
-
-                    <div class="skillset-example">
-                        <figure>
-                            <canvas height='150' id='html_css' width='150'>
-                            </canvas>
-                                <figcaption>
-                                    <h4>Intense jQuery</h4>
-                                    <p>I am quite familiar with this.</p>
-                                </figcaption>
-                        </figure>
+                    <div class='skillset-example'>
+                      <figure>
+                        <canvas height='150' id='jquery' width='150'></canvas>
+                        <figcaption>
+                          jQuery
+                        </figcaption>
+                      </figure>
                     </div>
-
-                    <div class="skillset-example">
-                        <figure>
-                            <canvas height='150' id='html_css' width='150'>
-                            </canvas>
-                                <figcaption>
-                                    <h4>Photoshop</h4>
-                                    <p>I am quite familiar with this.</p>
-                                </figcaption>
-                        </figure>
+                    <div class='skillset-example'>
+                      <figure>
+                        <canvas height='150' id='rails' width='150'></canvas>
+                        <figcaption>
+                          Photoshop
+                        </figcaption>
+                      </figure>
                     </div>
-
-                    <div class="skillset-example">
-                        <figure>
-                            <canvas height='150' id='html_css' width='150'>
-                            </canvas>
-                                <figcaption>
-                                    <h4>Flash</h4>
-                                    <p>I am quite familiar with this.</p>
-                                </figcaption>
-                        </figure>
+                    <div class='skillset-example'>
+                      <figure>
+                        <canvas height='150' id='backbone' width='150'></canvas>
+                        <figcaption>
+                          PHP
+                        </figcaption>
+                      </figure>
                     </div>
-
-                    <div class="skillset-example">
-                        <figure>
-                            <canvas height='150' id='html_css' width='150'>
-                            </canvas>
-                                <figcaption>
-                                    <h4>Inkscape</h4>
-                                    <p>I am quite familiar with this.</p>
-                                </figcaption>
-                        </figure>
+                    <div class='skillset-example'>
+                      <figure>
+                        <canvas height='150' id='photoshop' width='150'></canvas>
+                        <figcaption>
+                          Inkscape
+                        </figcaption>
+                      </figure>
                     </div>
-
                 </div>
             </div>
         </section>
@@ -211,6 +193,12 @@
                     </div>
                     <div class="message-form">
                         <h4 class="contact-title">Send me a message!<h4>
+                        <form action="" method="POST" name="cform" id="cform" class="clearfix">
+                            <input type="text" name="name" id="name" placeholder="Your name...">
+                            <input type="email" name="email" id="email" placeholder="Your email...">
+                            <textarea name="comments" id="comments" placeholder="Your message..." style="margin: 0px; width: 527px; /* height: 300px; */" ></textarea>
+                            <input type="submit" id="submit" name="send" class="submitBtn" value="Send Message">
+                        </form>
                     </div>
                 </div>
             </div>
@@ -220,12 +208,32 @@
                 Footer
         *********************************************************************-->
 
-        <section class="section-container grey" id="contact-jump">
-            <div class="section-wrapper">
-                <div class="section-title">
-                    <h2>Footer</h2>
-                    <small class="small-text">How I practice.</small>
-                </div>
+        <section class="footer-container grey">
+            <ul class="footer-icons clearfix">
+                <li class="footer-example">
+                    <a href="https://twitter.com/ernestsmillers">
+                        <img src="img/twitter.svg" alt="twitter-icon">
+                    </a>
+                </li>
+                <li class="footer-example">
+                    <a href="https://github.com/ErnestsMillers">
+                        <img src="img/github.svg" alt="twitter-icon">
+                    </a>
+                </li>
+                <li class="footer-example">
+                    <a href="https://uk.linkedin.com/in/ernests-millers-12731ab6">
+                        <img src="img/linkedin.svg" alt="twitter-icon">
+                    </a>
+                </li>
+                <li class="footer-example">
+                    <a href="https://www.facebook.com/ernests.millers">
+                        <img src="img/facebook.svg" alt="twitter-icon">
+                    </a>
+                </li>
+            </ul>
+            <div>
+                <h4>Ernests Millers</h4>
+                <p>All rights reserved &copy; </p>
             </div>
         </section>
 
@@ -238,8 +246,12 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
         <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
 
+
+        <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/0.2.0/Chart.min.js'></script>
+
+        <script src="js/main.js"></script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <!--<script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
