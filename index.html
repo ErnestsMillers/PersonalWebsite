@@ -18,6 +18,9 @@
         <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300i" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
         <link href="mediaq.css" rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="animate.css" />
+
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -29,10 +32,10 @@
         *********************************************************************-->
 
         <!--****HEADER SPLASH, BUTTON****-->
-    <div class="background" id="home-jump">
-        <section class="splash-container">
+    <div class="background animatedParent" id="home-jump">
+        <section class="splash-container animated bounceInDown delay-250">
             <div class="splash">
-                <h1 id="pageheader">Ernests Millers</h1>
+                <h1 id="pageheader" class="animated bounceInDown">Ernests Millers</h1>
                 <p>Front-end Developer</p>
             </div>
         </section>
@@ -42,9 +45,9 @@
         <section class="navbar">
             <div class="navbar-center">
                 <ul>
-                    <li><a class="active" href="#about-jump">About</a></li>
-                    <li><a href="#projects-jump">Projects</a></li>
-                    <li><a href="#contact-jump">Contact</a></li>
+                    <li class="hover-jump"><a href="#about-jump" > About </a></li>
+                    <li class="hover-jump"><a href="#projects-jump" > Projects </a></li>
+                    <li class="hover-jump"><a href="#contact-jump"> Contact </a></li>
                </ul>
            </div>
        </section>
@@ -71,7 +74,7 @@
                         <p>
                             When it comes to hobbies I could say that I am quite an active guy. I frequently go running near the seaside in mornings to see the beatiful Bournemouth view, I am quite active in gym too. Did I mention I also do martial arts and own a longboard?
                         </p>
-                        <a href="#" class="resume-button">Download my Resume to see more</a>
+                        <a href="Ernests_Millers_CV.pdf" class="resume-button" target="_blank">Preview my Resume to see more</a>
                     </div>
                 </div>
             </div>
@@ -212,22 +215,22 @@
             <ul class="footer-icons clearfix">
                 <li class="footer-example">
                     <a href="https://twitter.com/ernestsmillers">
-                        <img src="img/twitter.svg" alt="twitter-icon">
+                        <img src="img/twitter.svg" alt="twitter-icon" onmouseover="this.src='img/twitter-hover.svg';" onmouseout="this.src='img/twitter.svg';">
                     </a>
                 </li>
                 <li class="footer-example">
                     <a href="https://github.com/ErnestsMillers">
-                        <img src="img/github.svg" alt="twitter-icon">
+                        <img src="img/github.svg" alt="twitter-icon" onmouseover="this.src='img/github-hover.svg';" onmouseout="this.src='img/github.svg';">
                     </a>
                 </li>
                 <li class="footer-example">
                     <a href="https://uk.linkedin.com/in/ernests-millers-12731ab6">
-                        <img src="img/linkedin.svg" alt="twitter-icon">
+                        <img src="img/linkedin.svg" alt="twitter-icon" onmouseover="this.src='img/linkedin-hover.svg';" onmouseout="this.src='img/linkedin.svg';">
                     </a>
                 </li>
                 <li class="footer-example">
                     <a href="https://www.facebook.com/ernests.millers">
-                        <img src="img/facebook.svg" alt="twitter-icon">
+                        <img src="img/facebook.svg" alt="twitter-icon"  onmouseover="this.src='img/facebook-hover.svg';" onmouseout="this.src='img/facebook.svg';">
                     </a>
                 </li>
             </ul>
@@ -242,15 +245,14 @@
                 SCRIPTS
         *********************************************************************-->
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
         <script src="js/plugins.js"></script>
 
-
         <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
         <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/0.2.0/Chart.min.js'></script>
-
+        <script src='js/css3-animate-it.js'></script>
         <script src="js/main.js"></script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <!--<script>
