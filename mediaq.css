@@ -19,6 +19,10 @@
     .skillset-example, .project-example{
         width: 50%;
     }
+
+    .contact-details, .message-form, #name, #email, #comments {
+        width: 100%;
+    }
 }
 
 
@@ -29,9 +33,7 @@
         width: 80%;
     }
 
-    .contact-details, .message-form, #name, #email {
-        width: 100%;
-    }
+
 
     .section-container {
         padding: 60px 0 60px 0;
@@ -64,11 +66,10 @@
 @media only screen and (max-width: 530px) {
 
     .skillset-example{
-        width: 100%;
+        width: 50%;
     }
 
     .project-example {
-        width: 100%;
         margin-bottom: 30px;
     }
 
@@ -79,7 +80,4 @@
     .section-wrapper {
         width: 90%;
     }
-
-
-
 }

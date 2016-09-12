@@ -33,15 +33,27 @@ var data = {
   ]
 };
 
-var offset = 0;
-$.each(data, function(key, data) {
-  var canvas = document.querySelector('#' + key);
-  if(canvas) {
-    offset += 250;
-    setTimeout(function() {
-      var ctx = canvas.getContext('2d');
-      var chart = new Chart(ctx);
-      chart.Doughnut(data, options);
-    }, offset);
-  }
+
+    var offset = 0;
+    $.each(data, function(key, data) {
+      var canvas = document.querySelector('#' + key);
+      if(canvas) {
+        offset += 250;
+        setTimeout(function() {
+          var ctx = canvas.getContext('2d');
+          var chart = new Chart(ctx);
+          chart.Doughnut(data, options);
+        }, offset);
+      }
+    });
+
+
+$('a[href^="#"]').on('click', function(event) {
+    var target = $(this.getAttribute('href'));
+    if( target.length ) {
+        event.preventDefault();
+        $('html, body').stop().animate({
+            scrollTop: target.offset().top
+        }, 1000);
+    }
 });
