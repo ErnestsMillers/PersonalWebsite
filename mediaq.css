@@ -16,7 +16,7 @@
 
 
 @media only screen and (max-width: 900px) {
-    .skillset-example, .project-example{
+    .skillset-example{
         width: 50%;
     }
 
@@ -32,8 +32,6 @@
     .footer-icons {
         width: 80%;
     }
-
-
 
     .section-container {
         padding: 60px 0 60px 0;
@@ -67,10 +65,6 @@
 
     .skillset-example{
         width: 50%;
-    }
-
-    .project-example {
-        margin-bottom: 30px;
     }
 
     .resume-button {

@@ -1,3 +1,36 @@
+<?php
+
+$to = 'ernestsmillers@gmail.com';
+$subject = 'Email from website';
+
+$name = $_POST['name'];
+$email = $_POST['email'];
+
+$message = $_POST['message'];
+
+$body = <<<EMAIL
+
+From $name
+
+$message
+
+My email $email
+EMAIL;
+
+$header = "From: $email";
+
+if($_POST){
+    if($name == '' || $email == '' || $message == ''){
+        $feedback = 'Please fill out all the fields';
+    }else {
+        mail($to, $subject, $body, $header);
+        $feedback = 'Thanks for your email';
+    }
+}
+?>
+
+
+
 <!doctype html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
@@ -18,6 +51,7 @@
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300i" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+
 
         <link rel="stylesheet" type="text/css" href="animate.css" />
         <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
@@ -103,17 +137,27 @@
                 </div>
                 <div class="section-content">
                     <div class="project-container clearfix">
-
-
-                        <!-- Image Caption 1 -->
-                        <div id="box-1" class="box">
-                            <img id="image-1" src="/img/1stWebsite.png"/>
-                            <span class="caption simple-caption">
-                                <p>Simple Caption</p>
-                            </span>
+                        <div class="project-example">
+                            <img src="/img/project.jpg" alt="first-project" class="project-image">
+                            <p>
+                                Hello
+                            </p>
                         </div>
-
-
+                        <div class="project-example">
+                            <img src="/img/project.jpg" alt="second-project" class="project-image">
+                        </div>
+                        <div class="project-example">
+                            <img src="/img/project.jpg" alt="third-project" class="project-image">
+                        </div>
+                        <div class="project-example">
+                            <img src="/img/project.jpg" alt="fourth-project" class="project-image">
+                        </div>
+                        <div class="project-example">
+                            <img src="/img/project.jpg" alt="fifth-project" class="project-image">
+                        </div>
+                        <div class="project-example">
+                            <img src="/img/project.jpg" alt="sixth-project" class="project-image">
+                        </div>
                     </div>
                 </div>
             </div>
