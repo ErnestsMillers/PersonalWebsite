@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1300px) {
 
     .section-wrapper {
         width: 70%;
@@ -14,6 +14,60 @@
 
 }
 
+@media only screen and (max-width: 960px) {
+    #mainwrapper .box {
+        width: 150px;
+        height: 150px;
+    }
+
+    #mainwrapper .box .simple-caption, #mainwrapper .box .full-caption, #mainwrapper .box .fade-caption, #mainwrapper .box .slide-caption, #mainwrapper .box .rotate-caption, #mainwrapper .box .simple-caption-top {
+        width: 150px;
+    }
+
+    #mainwrapper .box .full-caption, #mainwrapper .box .fade-caption, #mainwrapper .box .slide-caption, #mainwrapper #box-5.box .rotate-caption {
+        padding: 15px;
+    }
+
+    #mainwrapper {
+        width: 510px;
+    }
+
+    .caption {
+        width: 150px;
+    }
+    #mainwrapper .box .slide-caption {
+        left: 150px;
+        height: 150px;
+    }
+
+    #image-1, #image-2, #image-3, #image-4, #image-5, #image-6 {
+        width: 150px;
+        height: 150px;
+    }
+
+    #mainwrapper #box-5.box .rotate-caption {
+        top: 150px;
+    }
+
+    #mainwrapper .box .rotate {
+        width: 150px;
+        height: 300px;
+    }
+
+    #mainwrapper #box-5.box .rotate-caption {
+        width: 150px;
+        height: 150px;
+    }
+
+    #mainwrapper .box .caption h3 {
+        font-size: 14px;
+    }
+
+    #mainwrapper .box .caption p {
+        font-size: 14px;
+        line-height: 1.5em;
+    }
+}
 
 @media only screen and (max-width: 900px) {
     .skillset-example{
@@ -39,7 +93,7 @@
 
     .hover-jump {
         width: 100%;
-        margin-bottom: 15px
+        margin-bottom: 15px;
     }
 
     .splash {
@@ -56,9 +110,19 @@
     }
 
     .navbar {
-        padding-bottom: 20px
+        padding-bottom: 20px;
     }
 
+    .box {
+        display: block;
+    }
+
+}
+
+@media only screen and (max-width: 750px) {
+    #mainwrapper {
+        width: 340px;
+    }
 }
 
 @media only screen and (max-width: 530px) {
@@ -73,5 +137,10 @@
 
     .section-wrapper {
         width: 90%;
+    }
+}
+@media only screen and (max-width: 400px) {
+    #mainwrapper {
+        width: 170px;
     }
 }

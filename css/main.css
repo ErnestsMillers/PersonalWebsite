@@ -189,7 +189,7 @@ li {
   text-align: center;
   width: 33%; }
 
-a {
+.header-link {
   text-decoration: none;
   line-height: 0;
   color: #eee;
@@ -260,30 +260,38 @@ h4 {
 
 /*PROJECTS*/
 .project-container {
-  padding-top: 10px; }
+  padding-top: 10px;
+  margin: 0 auto; }
 
-.box {
-  border: 2px solid #fff;
+/* Styles for container itself */
+#mainwrapper {
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+  width: 660px; }
+
+/*  Styles for each box - overflow hidden to hide boxes going out */
+#mainwrapper .box {
   cursor: pointer;
-  height: 182px;
+  height: 200px;
   float: left;
-  margin: 5px;
+  margin: 10px;
   position: relative;
   overflow: hidden;
   width: 200px; }
 
-.box img {
+/*  We also declare transition property on every image inside the box, in case we need the image transition later on. */
+#mainwrapper .box img {
   position: absolute;
   left: 0;
   -webkit-transition: all 300ms ease-out;
   -moz-transition: all 300ms ease-out;
   -o-transition: all 300ms ease-out;
   -ms-transition: all 300ms ease-out;
-  transition: all 300ms ease-out;
-  width: 100%;
-  height: 100%; }
+  transition: all 300ms ease-out; }
 
-.box .caption {
+/*  Styles of Caption box and 300ms animation for each in and out */
+#mainwrapper .box .caption {
   background-color: rgba(0, 0, 0, 0.8);
   position: absolute;
   color: #fff;
@@ -295,19 +303,130 @@ h4 {
   transition: all 300ms ease-out;
   left: 0; }
 
-.box .simple-caption {
-  height: 30px;
-  width: 200px;
-  display: block;
-  bottom: -30px;
-  line-height: 25pt;
+/* Typography and fix of p */
+#mainwrapper .box .caption h3 {
+  font-size: 16px;
   text-align: center; }
 
-.box:hover .simple-caption {
+#mainwrapper .box .caption p {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 1.8em;
+  text-align: center; }
+
+/*  ----- FIRST ANIMATION ----- */
+/*  Styles of first caption */
+#mainwrapper .box .simple-caption {
+  padding-top: 8px;
+  height: 40px;
+  width: 200px;
+  display: block;
+  bottom: -40px;
+  text-align: center; }
+
+/*  Transform for first caption */
+#mainwrapper .box:hover .simple-caption {
   -moz-transform: translateY(-100%);
   -o-transform: translateY(-100%);
   -webkit-transform: translateY(-100%);
   transform: translateY(-100%); }
+
+/*  ----- SECOND ANIMATION ----- */
+/*  Styles of second caption */
+#mainwrapper .box .full-caption {
+  width: 200px;
+  height: 200px;
+  top: -200px;
+  text-align: left;
+  padding: 35px 20px; }
+
+/*  Transform for second caption */
+#mainwrapper .box:hover .full-caption {
+  -moz-transform: translateY(100%);
+  -o-transform: translateY(100%);
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%); }
+
+/*  ----- THIRD ANIMATION ----- */
+/*  Styles of third caption */
+#mainwrapper .box .fade-caption, #mainwrapper .box .scale-caption {
+  opacity: 0;
+  width: 200px;
+  height: 200px;
+  text-align: left;
+  padding: 35px 20px; }
+
+/*  Transform for third caption */
+#mainwrapper .box:hover .fade-caption {
+  opacity: 1; }
+
+/** Caption 4: Slide **/
+#mainwrapper .box .slide-caption {
+  width: 200px;
+  height: 200px;
+  text-align: left;
+  padding: 35px 20px;
+  left: 200px;
+  color: white; }
+
+#mainwrapper .box:hover .slide-caption {
+  background-color: black !important;
+  -moz-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  opacity: 1;
+  transform: translateX(-100%); }
+
+#mainwrapper .box:hover img#image-4 {
+  -moz-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%); }
+
+#mainwrapper #box-5.box .rotate-caption {
+  width: 200px;
+  height: 200px;
+  text-align: left;
+  padding: 35px 20px;
+  top: 200px;
+  -moz-transform: rotate(-180deg);
+  -o-transform: rotate(-180deg);
+  -webkit-transform: rotate(-180deg);
+  transform: rotate(-180deg); }
+
+#mainwrapper .box .rotate {
+  width: 200px;
+  height: 400px;
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out;
+  transition: all 300ms ease-out; }
+
+#mainwrapper .box:hover .rotate {
+  background-color: black !important;
+  -moz-transform: rotate(-180deg);
+  -o-transform: rotate(-180deg);
+  -webkit-transform: rotate(-180deg);
+  transform: rotate(-180deg); }
+
+#mainwrapper .box .simple-caption-top {
+  padding-top: 8px;
+  height: 40px;
+  width: 200px;
+  display: block;
+  top: -40px;
+  text-align: center; }
+
+/*  Transform for first caption */
+#mainwrapper .box:hover .simple-caption-top {
+  -moz-transform: translateY(100%);
+  -o-transform: translateY(100%);
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%); }
+
+#mainwrapper .box #image-6 {
+  height: 200px; }
 
 /*SKILLSET*/
 .skillset-example {
@@ -422,6 +541,3 @@ figure {
 
 .footer-container > div > p {
   margin-top: 0; }
-
-#facebook-hover:hover {
-  background-image: url("img/facebook-hover.svg"); }
