@@ -140,7 +140,84 @@
     }
 }
 @media only screen and (max-width: 400px) {
+
+
     #mainwrapper {
-        width: 170px;
+        width: 280px;
+    }
+
+    #mainwrapper .box {
+        width: 120px;
+        height: 120px;
+    }
+
+    #mainwrapper .box .simple-caption, #mainwrapper .box .full-caption, #mainwrapper .box .fade-caption, #mainwrapper .box .slide-caption, #mainwrapper .box .rotate-caption, #mainwrapper .box .simple-caption-top {
+        width: 120px;
+    }
+
+
+    .caption {
+        width: 120px;
+    }
+    #mainwrapper .box .slide-caption {
+        left: 120px;
+        height: 120px;
+    }
+
+    #image-1, #image-2, #image-3, #image-4, #image-5, #image-6 {
+        width: 120px;
+        height: 120px;
+    }
+
+    #mainwrapper #box-5.box .rotate-caption {
+        top: 120px;
+    }
+
+    #mainwrapper .box .rotate {
+        width: 120px;
+        height: 240px;
+    }
+
+    #mainwrapper #box-5.box .rotate-caption {
+        width: 120px;
+        height: 120px;
+    }
+
+    #mainwrapper .box .caption h3 {
+        font-size: 11px;
+        line-height: 1em;
+    }
+
+    #mainwrapper .box .caption p {
+        font-size: 11px;
+        line-height: 1.2em;
+    }
+}
+
+
+@media only screen and (max-width: 1350px) {
+
+    .projectstabout{
+        padding: 100px 100px;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+
+    .projectstabout{
+        padding: 100px 30px;
+    }
+}
+@media only screen and (max-width: 615px) {
+    .projectstaboutlinks{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .projectstabout {
+        padding: 30px 30px;
+    }
+
+    .projectstabouttext {
+        padding: 0
     }
 }
