@@ -58,13 +58,6 @@ $('a[href^="#"]').on('click', function(event) {
     }
 });
 
-
-$("a[href='#top']").click(function() {
-  $("html, body").animate({ scrollTop: 0 }, "slow");
-  return false;
-});
-
-
 $(document).ready(function(){
 
 	//Check to see if the window is top if not then display button
